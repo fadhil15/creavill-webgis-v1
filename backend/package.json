@@ -1,0 +1,22 @@
+{
+    "name": "creavill-strapi-backend",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Strapi CMS backend for CreaVill Bandung WebGIS",
+    "scripts": {
+        "develop": "strapi develop",
+        "start": "strapi start",
+        "build": "strapi build",
+        "strapi": "strapi"
+    },
+    "dependencies": {
+        "@strapi/strapi": "^4.25.0",
+        "@strapi/plugin-users-permissions": "^4.25.0",
+        "pg": "^8.11.3",
+        "pg-connection-string": "^2.6.2"
+    },
+    "engines": {
+        "node": ">=18.0.0 <=20.x.x",
+        "npm": ">=6.0.0"
+    }
+}
