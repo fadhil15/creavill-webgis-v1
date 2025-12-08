@@ -52,17 +52,14 @@ export default function Navbar() {
 
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
-                        <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden bg-white">
-                            <Image
-                                src="/logo-creavill-bandung.png"
-                                alt="Creavill Logo"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                        <span className={`font-bold text-xl md:text-2xl ${isScrolled ? 'text-creavill-navy' : 'text-white'}`}>
-                            Creavill Bandung
-                        </span>
+                        <Image
+                            src="/images/logo-creavillbdg-fix.png"
+                            alt="Creavill Bandung"
+                            width={180}
+                            height={60}
+                            className="object-contain h-12 w-auto"
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Menu */}
