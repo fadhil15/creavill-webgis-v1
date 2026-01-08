@@ -42,8 +42,8 @@ const villages = [
 
 export default function Villages() {
     return (
-        <section className="py-24 bg-white">
-            <div className="container mx-auto px-6 md:px-12">
+                <section className="py-24 bg-white" id="desa-binaan"> 
+        <div className="container mx-auto px-6 md:px-12">
 
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div>

@@ -8,12 +8,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
-    { name: 'Beranda', href: '#' },
-    { name: 'Tentang', href: '#' },
-    { name: 'Program', href: '#' },
-    { name: 'Dampak', href: '#' },
-    { name: 'Desa Binaan', href: '#' },
-    { name: 'Kontak', href: '#' },
+    { name: 'Beranda', href: '/' }, 
+    { name: 'Tentang', href: '#tentang' },
+    { name: 'Program', href: '#program' },
+    { name: 'Dampak', href: '#dampak' },
+    { name: 'Desa Binaan', href: '#desa-binaan' },
+    { name: 'Kontak', href: '#kontak' },
 ];
 
 export default function Navbar() {

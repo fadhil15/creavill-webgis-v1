@@ -49,7 +49,7 @@ export default function ProgramsCarousel() {
     }, []);
 
     return (
-        <section className="py-24 bg-creavill-navy relative overflow-hidden">
+        <section className="py-24 bg-creavill-navy relative overflow-hidden" id="program">
             {/* Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
                 <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-creavill-cyan blur-3xl opacity-30" />
@@ -57,7 +57,6 @@ export default function ProgramsCarousel() {
             </div>
 
             <div className="container mx-auto px-6 md:px-12 relative z-10">
-
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
