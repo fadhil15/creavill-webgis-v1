@@ -4,8 +4,8 @@
     "info": {
         "singularName": "village",
         "pluralName": "villages",
-        "displayName": "Village",
-        "description": "Desa binaan CreaVill Bandung"
+        "displayName": "Desa",
+        "description": "Desa binaan CreaVill Bandung untuk WebGIS"
     },
     "options": {
         "draftAndPublish": true
@@ -23,9 +23,13 @@
         "description": {
             "type": "text"
         },
-        "coords": {
+        "center": {
             "type": "json",
             "required": true
+        },
+        "zoom": {
+            "type": "integer",
+            "default": 14
         },
         "legendColor": {
             "type": "string",
@@ -35,25 +39,13 @@
             "type": "boolean",
             "default": true
         },
-        "image": {
+        "coverImage": {
             "type": "media",
             "multiple": false,
             "required": false,
             "allowedTypes": [
                 "images"
             ]
-        },
-        "geojson_layers": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::geojson-layer.geojson-layer",
-            "mappedBy": "village"
-        },
-        "pois": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::poi.poi",
-            "mappedBy": "village"
         }
     }
 }

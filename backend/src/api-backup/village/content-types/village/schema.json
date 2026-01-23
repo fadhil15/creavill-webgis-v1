@@ -1,0 +1,59 @@
+{
+    "kind": "collectionType",
+    "collectionName": "villages",
+    "info": {
+        "singularName": "village",
+        "pluralName": "villages",
+        "displayName": "Village",
+        "description": "Desa binaan CreaVill Bandung"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "name"
+        },
+        "description": {
+            "type": "text"
+        },
+        "coords": {
+            "type": "json",
+            "required": true
+        },
+        "legendColor": {
+            "type": "string",
+            "default": "#3b82f6"
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "geojson_layers": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::geojson-layer.geojson-layer",
+            "mappedBy": "village"
+        },
+        "pois": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::poi.poi",
+            "mappedBy": "village"
+        }
+    }
+}

@@ -5,7 +5,7 @@
         "singularName": "geojson-layer",
         "pluralName": "geojson-layers",
         "displayName": "GeoJSON Layer",
-        "description": "GeoJSON layer data for villages"
+        "description": "Layer GeoJSON untuk WebGIS (polygon, line, point)"
     },
     "options": {
         "draftAndPublish": true
@@ -24,6 +24,9 @@
                 "tourism",
                 "minimarket",
                 "resto",
+                "education",
+                "health",
+                "government",
                 "other"
             ],
             "required": true
@@ -39,7 +42,8 @@
             "type": "string"
         },
         "legendColor": {
-            "type": "string"
+            "type": "string",
+            "default": "#3b82f6"
         },
         "legendType": {
             "type": "enumeration",
@@ -62,8 +66,7 @@
         "village": {
             "type": "relation",
             "relation": "manyToOne",
-            "target": "api::village.village",
-            "inversedBy": "geojson_layers"
+            "target": "api::village.village"
         }
     }
 }

@@ -5,7 +5,7 @@
         "singularName": "poi",
         "pluralName": "pois",
         "displayName": "POI",
-        "description": "Point of Interest (tourism, resto, minimarket, etc)"
+        "description": "Point of Interest (wisata, resto, minimarket, dll)"
     },
     "options": {
         "draftAndPublish": true
@@ -25,6 +25,7 @@
                 "education",
                 "health",
                 "government",
+                "agriculture",
                 "other"
             ],
             "required": true
@@ -62,8 +63,7 @@
         "village": {
             "type": "relation",
             "relation": "manyToOne",
-            "target": "api::village.village",
-            "inversedBy": "pois"
+            "target": "api::village.village"
         }
     }
 }

@@ -1,0 +1,69 @@
+{
+    "kind": "collectionType",
+    "collectionName": "pois",
+    "info": {
+        "singularName": "poi",
+        "pluralName": "pois",
+        "displayName": "POI",
+        "description": "Point of Interest (tourism, resto, minimarket, etc)"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "poiType": {
+            "type": "enumeration",
+            "enum": [
+                "tourism",
+                "restaurant",
+                "minimarket",
+                "education",
+                "health",
+                "government",
+                "other"
+            ],
+            "required": true
+        },
+        "category": {
+            "type": "string"
+        },
+        "subcategory": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "address": {
+            "type": "text"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "openingHours": {
+            "type": "string"
+        },
+        "coords": {
+            "type": "json",
+            "required": true
+        },
+        "photos": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "village": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::village.village",
+            "inversedBy": "pois"
+        }
+    }
+}
