@@ -49,7 +49,7 @@ export default function ProgramsCarousel() {
     }, []);
 
     return (
-        <section className="py-24 bg-creavill-navy relative overflow-hidden" id="program">
+        <section className="py-24 bg-creavill-navy relative overflow-hidden scroll-mt-26" id="program">
             {/* Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
                 <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-creavill-cyan blur-3xl opacity-30" />

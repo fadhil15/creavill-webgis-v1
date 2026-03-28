@@ -2,7 +2,7 @@ import { Instagram, MapPin } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-[#0D1245] border-t border-white/5 pt-16 pb-8">
+        <footer id="kontak" className="bg-[#0D1245] border-t border-white/5 pt-16 pb-8">
             <div className="container mx-auto px-6 md:px-12">
                 <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
 

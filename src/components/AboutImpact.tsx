@@ -91,7 +91,7 @@ export default function AboutImpact() {
                     </motion.div>
                 </div>
 
-                <div id="dampak" className="mb-24 scroll-mt-24">
+                <div id="dampak" className="mb-24 scroll-mt-44">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
