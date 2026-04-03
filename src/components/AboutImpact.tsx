@@ -1,7 +1,7 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
-import { motion, useInView, useSpring, useMotionValue, useTransform } from 'framer-motion';
+import { useRef, useEffect } from 'react';
+import { motion, useInView, useSpring, useMotionValue } from 'framer-motion';
 import { Network, Users, GraduationCap, Baby } from 'lucide-react';
 
 const stats = [
@@ -40,7 +40,7 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
 
 export default function AboutImpact() {
     return (
-        <section className="relative py-20 bg-gray-50 overflow-hidden">
+        <section id="tentang" className="relative py-20 bg-gray-50 overflow-hidden scroll-mt-20">
 
             {/* Background Decor */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-creavill-cyan/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
@@ -91,8 +91,7 @@ export default function AboutImpact() {
                     </motion.div>
                 </div>
 
-                {/* Impact Section */}
-                <div className="mb-24">
+                <div id="dampak" className="mb-24 scroll-mt-44">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
